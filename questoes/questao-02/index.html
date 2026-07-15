@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questão 02 - Avaliação Front End</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Questão 02</h1>
+      <a href="../../index.html" class="btn-voltar">⬅ Voltar ao Menu</a>
+    </header>
+
+    <main class="container-questao">
+      <section class="pergunta">
+        <h2>Qual é a saída correta para o código abaixo?</h2>
+
+        <pre><code id="bloco-codigo"></code></pre>
+      </section>
+
+      <section class="alternativas">
+        <p>A) Abre o link em uma nova aba</p>
+        <p class="correta">B) Abre o link na mesma aba</p>
+        <p>C) Não funciona, _self é um valor inválido</p>
+        <p>D) Abre o link em uma janela pop-up</p>
+      </section>
+    </main>
+
+    <script>
+      const codigoQuestao =
+        '<a href="https://exemplo.com" target="_self">Clique Aqui</a>';
+
+      document.getElementById("bloco-codigo").textContent = codigoQuestao;
+    </script>
+  </body>
+</html>

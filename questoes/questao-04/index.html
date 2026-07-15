@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questão 04 - Avaliação Front End</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Questão 04</h1>
+      <a href="../../index.html" class="btn-voltar">⬅ Voltar ao Menu</a>
+    </header>
+    
+    <main class="container-questao">
+      <section class="pergunta">
+        <h2>Qual é a saída deste código?</h2>
+
+        <pre><code id="bloco-codigo"></code></pre>
+      </section>
+
+      <section class="alternativas">
+        <p>A) Undefined</p>
+        <p class="correta">B) Number</p>
+        <p>C) NaN</p>
+        <p>D) Object</p>
+      </section>
+    </main>
+
+    <script>
+      const codigoQuestao = "console.log(typeof NaN);";
+
+      document.getElementById("bloco-codigo").textContent = codigoQuestao;
+    </script>
+  </body>
+</html>

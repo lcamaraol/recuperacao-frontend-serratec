@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questão 01 - Avaliação Front End</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Questão 01</h1>
+      <a href="../../index.html" class="btn-voltar">⬅ Voltar ao Menu</a>
+    </header>
+
+    <main class="container-questao">
+      <section class="pergunta">
+        <h2>Qual é o resultado no navegador do seguinte código HTML?</h2>
+
+        <pre><code id="bloco-codigo"></code></pre>
+      </section>
+
+      <section class="alternativas">
+        <p class="correta">A) Três parágrafos exibidos</p>
+        <p>B) Dois parágrafos exibidos</p>
+        <p>C) Um parágrafo exibido</p>
+        <p>D) Erro no console</p>
+      </section>
+    </main>
+
+    <script>
+      const codigoQuestao = `<!DOCTYPE html>
+<html>
+  <head>
+   <title>Teste</title>
+  </head>
+  <body>
+    <p>Olá Mundo!</p>
+    <p>Olá mundo novo!</p>
+  <script>
+     document.write("<p>Este é um teste</p>");
+  <\/script>
+  </body>
+</html>`;
+
+      document.getElementById("bloco-codigo").textContent = codigoQuestao;
+    </script>
+  </body>
+</html>

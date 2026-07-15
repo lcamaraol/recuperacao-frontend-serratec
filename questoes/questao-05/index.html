@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questão 05 - Avaliação Front End</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Questão 05</h1>
+      <a href="../../index.html" class="btn-voltar">⬅ Voltar ao Menu</a>
+    </header>
+
+    <main class="container-questao">
+      <section class="pergunta">
+        <h2>Qual será a cor final do parágrafo exibido no navegador?</h2>
+
+        <pre><code id="bloco-codigo"></code></pre>
+      </section>
+
+      <section class="alternativas">
+        <p>A) Azul</p>
+        <p>B) Vermelho</p>
+        <p class="correta">C) Verde</p>
+        <p>D) Erro no console</p>
+      </section>
+      <section class="container-obs">
+        <p>Por mais que tenha uma chave extra na parte do "{color: blue;}}" isso não afeta diretamten a cor final e a execução do codigo.</p>
+      </section>
+    </main>
+
+    <script>
+      const codigoQuestao = `<!DOCTYPE html>
+  <html>
+    <head>
+    <style>
+          p { color: blue; }}
+          vermelho { color: red important; }
+          #paragrafo { color: green; }
+    </style>
+    </head>
+  <body>
+     <p id="paragrafo" class="vermelho">Texto colorido</p>
+  </body>
+  </html>
+`;
+
+      document.getElementById("bloco-codigo").textContent = codigoQuestao;
+    </script>
+  </body>
+</html>

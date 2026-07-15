@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questão 03 - Avaliação Front End</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Questão 03</h1>
+      <a href="../../index.html" class="btn-voltar">⬅ Voltar ao Menu</a>
+    </header>
+
+    <main class="container-questao">
+      <section class="pergunta">
+        <h2>O que acontece com o texto no parágrafo abaixo?</h2>
+
+        <pre><code id="bloco-codigo"></code></pre>
+      </section>
+
+      <section class="alternativas">
+        <p>A) O texto fica vermelho</p>
+        <p class="correta">B) O texto fica azul</p>
+        <p>C) O texto fica roxo (mistura de vermelho e azul)</p>
+        <p>D) Erro de sintaxe</p>
+      </section>
+    </main>
+
+    <script>
+      const codigoQuestao =
+        '<p style="color: red; color: blue;">Texto Colorido</p>';
+
+      document.getElementById("bloco-codigo").textContent = codigoQuestao;
+    </script>
+  </body>
+</html>

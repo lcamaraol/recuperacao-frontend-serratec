@@ -3,6 +3,8 @@
 Este é um projeto feito para apresentar um questionário de avaliação de conhecimentos em Front-End. 
 O projeto contém 20 questões de múltipla escolha estruturadas em páginas individuais.
 
+Trabalho feito por <a  href="https://github.com/lcamaraol/">Bernardo da Silva Araújo de Oliveira. </a>
+
 ## 🛠️ Tecnologias Utilizadas
 
 *   **HTML5:** Estruturação semântica das páginas e questões.

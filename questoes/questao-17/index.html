@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questão 17 - Avaliação Front End</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Questão 17</h1>
+      <a href="../../index.html" class="btn-voltar">⬅ Voltar ao Menu</a>
+    </header>
+
+    <main class="container-questao">
+      <section class="pergunta">
+        <h2>
+          No contexto de um script Javascript numa página Web, considere o
+          trecho a seguir.
+        </h2>
+
+        <pre><code id="bloco-codigo"></code></pre>
+
+        <p>É correto afirmar sobre esse script que:</p>
+      </section>
+
+      <section class="alternativas">
+        <p>A) Há um erro de sintaxe que impede sua execução</p>
+        <p class="correta">
+          B) Quando executado, exibe a definição da função teste
+        </p>
+        <p>C) Quando executado, exibe o valor 0</p>
+        <p>D) Quando executado, exibe o valor undefined</p>
+      </section>
+    </main>
+
+    <script>
+      const codigoQuestao = `<script>
+   function teste(x) { return (x / 2)  }
+   alert (teste);
+<\/script>`;
+
+      document.getElementById("bloco-codigo").textContent = codigoQuestao;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questão 16 - Avaliação Front End</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Questão 16</h1>
+      <a href="../../index.html" class="btn-voltar">⬅ Voltar ao Menu</a>
+    </header>
+
+    <main class="container-questao">
+      <section class="pergunta">
+        <h2>
+          Julgue o item subsequente, a respeito de HTML5, CSS3 e Javascript. O
+          código Javascript a seguir, ao ser executado, apresenta o valor 3 no
+          console de desenvolvimento do navegador web.
+        </h2>
+
+        <pre><code id="bloco-codigo"></code></pre>
+      </section>
+
+      <section class="alternativas">
+        <p>A) Certo</p>
+        <p class="correta">B) Errado</p>
+      </section>
+    </main>
+
+    <script>
+      const codigoQuestao = `<script>
+   var cores = ["vermelho", "verde", "azul"]
+   console.log(cores.length());
+<\/script>`;
+
+      document.getElementById("bloco-codigo").textContent = codigoQuestao;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questão 06 - Avaliação Front End</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Questão 06</h1>
+      <a href="../../index.html" class="btn-voltar">⬅ Voltar ao Menu</a>
+    </header>
+
+    <main class="container-questao">
+      <section class="pergunta">
+        <h2>Considere o código abaixo, o que é impresso no console?</h2>
+        <pre><code id="bloco-codigo"></code></pre>
+      </section>
+
+      <section class="alternativas">
+        <p>A) true, true</p>
+        <p>B) false, false</p>
+        <p class="correta">C) true, false</p>
+        <p>D) false, true</p>
+      </section>
+    </main>
+
+    <script>
+      const codigoQuestao = `let a = 10;
+let b = "10";
+console.log(a == b);
+console.log(a === b);`;
+
+      document.getElementById("bloco-codigo").textContent = codigoQuestao;
+    </script>
+  </body>
+</html>

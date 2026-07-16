@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questão 20 - Avaliação Front End</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Questão 20</h1>
+      <a href="../../index.html" class="btn-voltar">⬅ Voltar ao Menu</a>
+    </header>
+
+    <main class="container-questao">
+      <section class="pergunta">
+        <h2>Observe os dois comandos de atribuição do Javascript.</h2>
+
+        <pre><code id="bloco-codigo"></code></pre>
+
+        <p>Assinale o valor de X após a execução desses comandos.</p>
+      </section>
+
+      <section class="alternativas">
+        <p>A) 0</p>
+        <p>B) 3</p>
+        <p>C) -100</p>
+        <p class="correta">D) -3200</p>
+      </section>
+    </main>
+
+    <script>
+      const codigoQuestao = `let X = -100 
+X <<= 5`;
+
+      document.getElementById("bloco-codigo").textContent = codigoQuestao;
+    </script>
+  </body>
+</html>
